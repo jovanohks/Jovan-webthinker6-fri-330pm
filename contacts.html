@@ -52,17 +52,37 @@
 			<div class="row gy-3">
 				<!-- Label: Name*
 						 Text Input field -->
-
+				<div class="col col-12 col-md-6">
+					<label for="name" class="form-label">name*</label><br/>
+					<input type="text" class='form-control is-invalid'id="name" placeholder="John Doe">
+					<p id='inputclasserror' class="text-danger d-none">Please provide name!</p>
+				</div>
+				<div class="col col-12 col-md-6">
+					<label for="email" class="form-label">email</label><br/>
+					<input type="email" class='form-control'id="email" placeholder="name@123.com">
+				</div>
+				<div class="col col-12">
+					<label for="subjecttitle" id="form-label">Subject*</label>
+					<input type="text" class="form-control" id="subject" placeholder="How to code?">
+				</div>
+				<div class="col col-12">
+					<label class="form-label" for="subject">Subject*</label>
+					<textarea class="form-control" rows=5></textarea>
+				</div>
 				<!-- Label: Email Address*
 						 Email Input field -->
-
+				
 				<!-- Label: Subject*
 						 Text Input field with placeholder text "Enquiry on how to code"-->
 
 				<!-- Label: Subject*
 						 Textarea field with the row attribute of value 5-->
+				
 			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
+			<div>
+				<button type="button" class="btn btn-primary">send.</button>
+			</div>
 		</form>
 	</article>
 	<!-- End of coding region -->

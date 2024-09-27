@@ -54,12 +54,26 @@
       }
       
     </script>
-    <form>
-      First Name:
-      <input type="text" id="firstname" name="Firstname" placeholder="What is your first name?" />
-      Date of Birth:
-      <input type="date" id="DOB" name="DOB" placeholder="" />
-    </form>
+    <div>
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="firstname">First Name:</label>
+            <input class="form-control" type="text" id="firstname" name="Firstname" placeholder="What is your first name?" />
+          </div>
+          <div class="col">
+            <label for="DOB">Date of Birth:</label>
+            <input class="form-control" type="date" id="DOB" name="DOB" placeholder="" />
+          </div>
+        </div>
+        <label for="email">EMAIL:</label>
+        <input class="form-control" id="email"/>
+        <textarea class="form-control" rows="5"></textarea>
+        <div class="pt-3 pb-3">
+          <button type='reset' class="btn btn-success">send</button>
+        </div>
+      </form>
+    </div class="container">
     <table class="table table-hover">
       <thead>
         <tr>
@@ -79,5 +93,13 @@
       </tbody>
     </table>
     <button type="button" class="btn btn-primary">Hello!</button>
+    <!-- The test thingy -->
+     <form>
+      <div class="row">
+        <label for ='contact'>Contact us:</label>
+        <input class="form-control" type="number" id="contact">
+        
+      </div>
+     </form>
   </body>
 </html>
