@@ -54,20 +54,25 @@
 						 Text Input field -->
 				<div class="col col-12 col-md-6">
 					<label for="name" class="form-label">name*</label><br/>
-					<input type="text" class='form-control is-invalid'id="name" placeholder="John Doe">
-					<p id='inputclasserror' class="text-danger d-none">Please provide name!</p>
+					<input type="text" class='form-control 'id="firstname" placeholder="John Doe">
+					<p id='firstnameerror' class="text-danger d-none">Please provide name!</p>
 				</div>
 				<div class="col col-12 col-md-6">
 					<label for="email" class="form-label">email</label><br/>
 					<input type="email" class='form-control'id="email" placeholder="name@123.com">
+					<p id='emailerror' class="text-danger d-none ">Please provide email!</p>
 				</div>
 				<div class="col col-12">
 					<label for="subjecttitle" id="form-label">Subject*</label>
-					<input type="text" class="form-control" id="subject" placeholder="How to code?">
+					<input type="text" class="form-control " id="subject" placeholder="How to code?">
+					<p id="subjecterror" class="text-danger d-none">Please provide subject!</p>
+
 				</div>
 				<div class="col col-12">
 					<label class="form-label" for="subject">Subject*</label>
-					<textarea class="form-control" rows=5></textarea>
+					<textarea class="form-control" id="subjecttext" rows=5></textarea>
+					<p id="subjecttexterror" class="text-danger d-none">Please provide text!</p>
+
 				</div>
 				<!-- Label: Email Address*
 						 Email Input field -->
@@ -80,12 +85,15 @@
 				
 			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
-			<div>
-				<button type="button" class="btn btn-primary">send.</button>
+			<div class="pt-3 pb-3">
+
+				<button type="button" class="btn btn-primary" onclick="validate();">send.</button>
+
 			</div>
 		</form>
 	</article>
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
+
 </body>
 </html>
