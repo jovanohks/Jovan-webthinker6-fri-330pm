@@ -66,7 +66,17 @@
 					<h4>platformer game</h4>
 					<iframe src="https://scratch.mit.edu/projects/779856092/embed " allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br />
 				</div>
-				<div id="canvas" class="tab-pane fade ">canvas</div>
+				<div id="canvas" class="tab-pane fade ">
+					<canvas id="drawingboard" class="border border-dark"width="800" height="600"></canvas>
+					<div>
+						<label for="canvasPause" >Pause animation</label>
+						<input type="radio" name="playPause" id="pauseanimation" class="btn btn-danger"  />
+						<label for="canvasPlay" >Play animation</label>
+						<input type="radio" name="playPause" id="playanimation" class="btn btn-success "  checked />
+
+						<button type="button" onclick="window.onload();" class="btn btn-primary">fast forward</button>
+					</div>
+				</div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
 				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
@@ -77,7 +87,6 @@
 				- 2 radio buttons:
 						- One of them should be named "Pause Animation" with an ID of "canvasPause" with a red looking appearance.
 						- Another one should be named "Play Animation"  with an ID of "canvasPlay" with a green looking appearance.  -->
-				
 
 			</div>
 		</div>
