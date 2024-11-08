@@ -117,5 +117,55 @@
       <li>change to school uniform</li>
       <li>leave the house</li>
     </ol>
+    <canvas id="drawingboard" width="1000"height="1000"class='border border-danger'></canvas>
+    <script>
+      const canvas=document.getElementById("drawingboard");
+      const canvascenter=canvas.width /2;
+      const centerY = canvas.height /2;
+      //console.log(canvas);
+      let ctx=canvas.getContext('2d');
+
+      //console.log(context);
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(100,100);
+      ctx.stroke();
+      let draw = (mx,my,lx,ly )=>{
+        canvas.getContext('2d').beginPath();
+        canvas.getContext('2d').moveTo(mx,my);
+        canvas.getContext('2d').lineTo(lx,ly);
+        canvas.getContext('2d').stroke();
+      }
+      let rect = (c1,c2,c3,a,mx,my,lx,ly) =>{
+        let ctx=canvas.getContext('2d');
+        ctx.fillStyle = "rgba({c1},{c2},{c3},{a})";
+        ctx.fillRect(mx,my,lx,ly);
+      }
+      let circle = (originx,originy,radius,sra,era,strokec1,strokec2,strokec3,fillc1,fillc2,fillc3,lw) =>{
+        
+      }
+
+    
+      draw(100,100,200,150)
+      ctx.fillStyle = "rgba(200,0,0,0.5)";
+      ctx.fillRect(10,10,600,800);
+      rect(200,0,0,0.5,700,700,700,800);
+      ctx.strokeStyle = 'rgba(0,0,0,0.5)';
+      ctx.lineWidth  = 10;
+      ctx.arc(120,120,100,0,2*Math.PI)
+      
+      ctx.stroke();
+      ctx.fill();     
+      let gradient=ctx.createRadialGradient(50,50,0,150,150,150);
+      gradient.addColorStop(0,"rgb(0,0,0)");
+      gradient.addColorStop(0.5,"rgb(255,0,0)");
+      gradient.addColorStop(0.23,"rgba(255,29,239,0.25)");
+      gradient.addColorStop(1,"rgb(255,255,255)");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(10,10,300,200);
+      let answer = window.prompt("what is your password");
+      alert("your password is "+ answer);
+      
+    </script>
   </body>
 </html>
